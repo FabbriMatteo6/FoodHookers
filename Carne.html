@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Carne</title>
+</head>
+
+<body>
+  <h2>
+    Carne
+  </h2>
+
+  <hr size="3" noshade>
+  <!--
+table = funzione che permette di gestire il contenuto come se fosse in tabella e garantire spaziatura costante tra le cella
+<tr></tr> = riga di tabella
+<td></td> = cella di tabella a partire da sx all'interno del table row
+<thead></thead> o <tfoot></tfoot> o <tbody></tbody> servono per indicare header/footer/corpo di tabella
+Quando si usa <thead> la cella si indica con <th></th>
+La tabella funziona lo stesso anche senza scomporre tra header, footer, body. Però è utile scomporre le sezioni nel caso si volessero definire specifici formati per ciascuna sezione in CSS
+La tabella non ha funzioni per le colonne ma si usa <td></td> per le celle in ciascuna riga
+cellspacing = defnisce lo spazio tra due celle (meglio fare con CSS)
+Quando vuoi affiancare due tabelle conviene usare CSS, però è possibile farlo anche con HTML facendo un nested table, dove nel primo td ci sarà la prima tabella e nel secondo td ci sarà la seconda tabella
+  -->
+
+  <form class="" action="home.html" method="post">
+    <label for="PriceRange">
+      <h3>
+        Define the price range (0-100€)
+      </h3>
+    </label>
+    <input id="PriceRange" type="number" name="PriceRange" value="5" min = "0" max="100">
+  </form>
+
+  <table cellspacing="40">
+    <thead>
+      <tr>
+        <th>Image </th>
+        <th>Prodotto</th>
+        <th>Prezzo</th>
+        <th>Supermercato</th>
+        <th>Link Prodotto</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <img src="https://images.services.esselunga.it/html/img_prodotti/esselunga/medium2/721370.jpg" alt="">
+        </td>
+        <td>Prodotto 1</td>
+        <td>Prezzo 1</td>
+        <td>Supermercato 1</td>
+        <td>Link 1</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="https://images.services.esselunga.it/html/img_prodotti/esselunga/medium2/725422.jpg" alt="">
+        </td>
+        <td>Prodotto 2</td>
+        <td>Prezzo 2</td>
+        <td>Supermercato 2</td>
+        <td>Link 2</td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+
+  </table>
+</body>
+
+</html>
